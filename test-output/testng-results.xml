@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Homepage is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Flight Results page is displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="32165" started-at="2018-02-01T06:50:47Z" finished-at="2018-02-01T06:51:19Z">
+    <groups>
+      <group name="smoke">
+        <method signature="SearchFlight.testPuneToKolkata()[pri:0, instance:test.SearchFlight@51e2adc7]" name="testPuneToKolkata" class="test.SearchFlight"/>
+      </group> <!-- smoke -->
+      <group name="flights">
+        <method signature="SearchFlight.testPuneToKolkata()[pri:0, instance:test.SearchFlight@51e2adc7]" name="testPuneToKolkata" class="test.SearchFlight"/>
+      </group> <!-- flights -->
+    </groups>
+    <test name="Test" duration-ms="32165" started-at="2018-02-01T06:50:47Z" finished-at="2018-02-01T06:51:19Z">
+      <class name="test.SearchFlight">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:test.SearchFlight@51e2adc7]" test-instance-name="PuneToKolkataFlight" name="openApplication" is-config="true" duration-ms="13190" started-at="2018-02-01T12:20:47Z" finished-at="2018-02-01T12:21:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testPuneToKolkata()[pri:0, instance:test.SearchFlight@51e2adc7]" test-instance-name="PuneToKolkataFlight" name="testPuneToKolkata" duration-ms="17912" started-at="2018-02-01T12:21:00Z" finished-at="2018-02-01T12:21:18Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Homepage is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Flight Results page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPuneToKolkata -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:test.SearchFlight@51e2adc7]" test-instance-name="PuneToKolkataFlight" name="closeApplication" is-config="true" duration-ms="1025" started-at="2018-02-01T12:21:18Z" finished-at="2018-02-01T12:21:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PuneToKolkataFlight status=SUCCESS method=SearchFlight.testPuneToKolkata()[pri:0, instance:test.SearchFlight@51e2adc7] output=Homepage is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- test.SearchFlight -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

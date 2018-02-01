@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generic.OrbitzListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.SearchFlight">
+        <methods>
+          <include name="closeApplication"/>
+          <include name="testPuneToKolkata"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- test.SearchFlight -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
