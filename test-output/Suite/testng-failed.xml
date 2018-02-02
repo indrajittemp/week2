@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
   <listeners>
     <listener class-name="generic.OrbitzListener"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="test.SearchFlight">
         <methods>
           <include name="closeApplication"/>
+          <include name="closeApplication"/>
           <include name="testPuneToKolkata"/>
+          <include name="openApplication"/>
           <include name="openApplication"/>
         </methods>
       </class> <!-- test.SearchFlight -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

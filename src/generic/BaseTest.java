@@ -20,19 +20,19 @@ public abstract class BaseTest implements IConstants
 	static 
 	{
 		System.setProperty(CHROME_KEY,CHROME_DRIVER_PATH);
-		System.setProperty("webdriver.edge.driver","./drivers/MicrosoftWebDriver.exe");
+		System.setProperty(FIREFOX_KEY,FIREFOX_DRIVER_PATH);
 	}
 	
 	public WebDriver driver;
 		
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun=true)
-	public void openApplication(@Optional("chrome") String browser)
+	public void openApplication(@Optional("chrom") String browser)
 	{
 		if(browser.equalsIgnoreCase("chrome"))
 			driver=new ChromeDriver();
 		else
-			driver=new EdgeDriver();
+			driver=new FirefoxDriver();
 		
 		
 		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);		
